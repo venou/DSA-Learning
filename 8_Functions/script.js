@@ -41,3 +41,54 @@
 //     console.log(`${num} is odd number`);
 //   }
 // }
+
+// Write a function that searches for an element in an array and returns the index, if the element is not present then just return -1
+
+// let array = [2, 4, 6, 8, 10];
+// function searchElement(array, x) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] == x) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+
+// let result = searchElement(array, 12);
+// console.log(result);
+
+// Write a function that returns the number of negative numbers in an array.
+
+// let array = [21, -11, 99, 3, 4, -21];
+// let array2 = [21, -11, 99, 3, -22, -3, 4, -21];
+// function countNegative(array) {
+//   let count = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] < 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// let result = countNegative(array2);
+// console.log(result);
+
+// Write a function that returns the largest number in an array
+
+// let arr = [5, 0, 7, 10, 8, 17, 1];
+// function findLargest(arr) {
+//   let largest = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//       largest = arr[i];
+//     }
+//   }
+//   return largest;
+// }
+// let res = findLargest(arr);
+// console.log(res);
+
+
+// Write a function that returns the smallest number in an array
+
