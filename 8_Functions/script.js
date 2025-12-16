@@ -89,6 +89,45 @@
 // let res = findLargest(arr);
 // console.log(res);
 
-
 // Write a function that returns the smallest number in an array
 
+// let arr = [4, 9, 12, -1, 2, 8, 7, 1];
+
+// function findSmallest(arr) {
+//   if (arr.length === 0) {
+//     return null;
+//   }
+//   let smallest = Infinity;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < smallest) {
+//       smallest = arr[i];
+//     }
+//   }
+//   return smallest;
+// }
+// let res = findSmallest(arr);
+// console.log(res);
+
+// Find Second Largest in array
+
+// let arr = [4, 9, 0, 2, 8, 7, 1];
+
+// function findSecondlargest(arr) {
+//   if (arr.length < 2) {
+//     return null;
+//   }
+//   let firstLargest = -Infinity;
+//   let secondLargest = -Infinity;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > firstLargest) {
+//       secondLargest = firstLargest;
+//       firstLargest = arr[i];
+//     } else if (arr[i] > secondLargest && arr[i] != firstLargest) {
+//       secondLargest = arr[i];
+//     }
+//   }
+//   return secondLargest;
+// }
+
+// let res = findSecondlargest(arr);
+// console.log(res);
