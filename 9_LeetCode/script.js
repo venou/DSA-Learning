@@ -16,7 +16,6 @@
 
 // console.log(palindrome(1291));
 
-
 // Reverse Integer
 
 // function reverseInteger(x) {
@@ -35,3 +34,38 @@
 
 // let res = reverseInteger(874328778238787);
 // console.log(res);
+
+// Remove Duplicates from sorted Array
+
+// let nums = [0, 1, 2, 3, 3, 5, 6, 8, 8, 9];
+
+// function removeDuplicates(nums) {
+//   let x = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] > nums[x]) {
+//       x = x + 1;
+//       nums[x] = nums[i];
+//     }
+//   }
+//   return x + 1;
+// }
+
+// let res = removeDuplicates(nums);
+// console.log(res);
+
+let nums = [0, 1, 2, 2, 3, 0, 4, 2];
+let val = 2;
+
+function removeElement(nums, val) {
+  let x = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== val) {
+      nums[x] = nums[i];
+      x = x + 1;
+    }
+  }
+  return x;
+}
+
+let res = removeElement(nums, val);
+console.log(res);
