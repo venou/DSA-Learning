@@ -53,19 +53,46 @@
 // let res = removeDuplicates(nums);
 // console.log(res);
 
-let nums = [0, 1, 2, 2, 3, 0, 4, 2];
-let val = 2;
+// let nums = [0, 1, 2, 2, 3, 0, 4, 2];
+// let val = 2;
 
-function removeElement(nums, val) {
-  let x = 0;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== val) {
-      nums[x] = nums[i];
-      x = x + 1;
-    }
-  }
-  return x;
-}
+// function removeElement(nums, val) {
+//   let x = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] !== val) {
+//       nums[x] = nums[i];
+//       x = x + 1;
+//     }
+//   }
+//   return x;
+// }
 
-let res = removeElement(nums, val);
-console.log(res);
+// let res = removeElement(nums, val);
+// console.log(res);
+
+// #88 Merge Sorted Array
+
+// Brute Force Approach
+let nums1 = [1, 2, 3, 0, 0, 0];
+let m = 3;
+let nums2 = [2, 5, 6];
+let n = 3;
+
+// function merge(nums1, m, nums2, n) {
+//   let temp = [];
+
+//   for (let i = 0; i < m; i++) {
+//     temp.push(nums1[i]);
+//   }
+//   for (let j = 0; j < n; j++) {
+//     temp.push(nums2[j]);
+//   }
+//   temp.sort((a, b) => a - b);
+
+//   for (let k = 0; k < temp.length; k++) {
+//     nums1[k] = temp[k];
+//   }
+// }
+
+// merge(nums1, m, nums2, n);
+// console.log(nums1);
