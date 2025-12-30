@@ -140,3 +140,44 @@
 
 // merge(nums1, m, nums2, n);
 // console.log(nums1);
+
+// Zeores
+
+// nums = [0, 1, 0, 3, 12]
+
+// function zeros(nums) {
+//     let x = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] !== 0) {
+//             nums[x] = nums[i]
+//             x++
+//         }
+//     }
+//     for (let i = x; i < nums.length; i++) {
+//         nums[i] = 0
+//     }
+// }
+// zeros(nums)
+// console.log(nums)
+
+// Find Consecutives
+
+/**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+// var findMaxConsecutiveOnes = function (nums) {
+//   let currentCount = 0;
+//   let maxCount = 0;
+
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] === 1) {
+//       currentCount++;
+//     } else {
+//       maxCount = Math.max(currentCount, maxCount);
+//       currentCount = 0;
+//     }
+//   }
+
+//   return Math.max(currentCount, maxCount);
+// };
