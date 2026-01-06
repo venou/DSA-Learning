@@ -21,3 +21,56 @@
 // }
 
 // print(1)
+
+// Write a program using recursion to print sum of element in an array
+
+// let arr = [5, 4, 6, 8, 2];
+
+// function sum(n) {
+//   if (n === 0) return arr[n];
+//   return arr[n] + sum(n - 1);
+// }
+
+// console.log(sum(arr.length - 1));
+
+// Write a program using recursion to print sum of odd numbers in an array
+
+// let arr = [5, 4, 6, 8, 9,2];
+
+// function sum(n) {
+//   let isOdd = arr[n] % 2 !== 0;
+//   if (n === 0) {
+//     return isOdd ? arr[n] : 0;
+//   }
+//   return (isOdd ? arr[n] : 0) + sum(n - 1);
+// }
+
+// console.log(sum(arr.length - 1));
+
+// Write a program using recursion to print factorial
+
+// function fact(n) {
+//     if (n === 1) return 1
+//     return n * fact(n - 1)
+// }
+// console.log(fact(8))
+
+// Write a program using recursion to print factorial of element in an array
+
+// let arr = [5, 4, 6, 8, 2]
+
+// function factorial(n) {
+//     if (n === 0) return arr[n]
+//     return arr[n] * factorial(n - 1)
+// }
+// console.log(factorial(arr.length - 1))
+
+// # 231 Power of two
+
+function isPowerOfTwo(n) {
+  if (n === 1) return true;
+  else if (n < 1 || n % 2 !== 0) return false;
+  return isPowerOfTwo(n / 2);
+}
+
+console.log(isPowerOfTwo(65));
